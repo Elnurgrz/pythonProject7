@@ -21,7 +21,7 @@ class Company:
         self.cursor.execute(sql_command)
         self.connection.commit()           # baxmalisan
 
-    def connection_cut(self):
+    def connection_cut(self):             # yoxlama
         self.connection.close()
 
     def show_employee(self):
