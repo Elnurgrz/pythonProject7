@@ -19,9 +19,9 @@ class Company:
         self.cursor = self.connection.cursor()
         sql_command = "Create table if not exists company (Name TEXT, Surname TEXT, Father_name TEXT, Date_of_birth INT)"
         self.cursor.execute(sql_command)
-        self.connection.commit()
+        self.connection.commit()           # baxmalisan
 
-    def connection_cut(self):
+    def connection_cut(self):             # yoxlama
         self.connection.close()
 
     def show_employee(self):
